@@ -31,11 +31,7 @@ const Sidebar = ({toggle, isOpen}) => {
                     </a>
                 </li>
             </ul>
-            <div className="sidebar-menu-icons">
-                <i className="fa-brands fa-linkedin"></i>
-                <i className="fa-brands fa-github"></i>
-                <i className="fa-solid fa-envelope"></i>
-            </div>
+            
         </div>
     </nav>
   )

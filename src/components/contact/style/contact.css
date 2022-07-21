@@ -1,0 +1,62 @@
+.home-icon_container{
+    width: max-content;
+    height: max-content;
+    position: fixed;
+    top: 675px;
+    z-index: 5;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+  }
+  .home-icon_container-action {
+    transform: translateX(0%);
+    transition: transform .06s ease;
+  }
+  .home-icon-linkedin {
+    background: #1479bd;
+    padding: 8px;
+    font-size: 40px;
+    border-top-right-radius: 5px;
+  }
+  .home-icon-linkedin:hover{
+    background: white;
+    color: #1479bd;
+  }
+  .home-icon-github {
+    background: #902fa8;
+    padding: 8px;
+    font-size: 40px;
+  }
+  .home-icon-github:hover{
+    background: white;
+    color: #902fa8;
+  }
+  .home-icon-envelope {
+    background: #188a5e;
+    padding: 8px;
+    font-size: 40px;
+    border-bottom-right-radius: 5px;
+  }
+  .home-icon-envelope:hover{
+    background: white;
+    color: #188a5e;
+  }
+  .home-action {
+    width: max-content;
+    height: max-content;
+    position: fixed;
+    top: 650px;
+    z-index:4;
+    font-size: 30px;
+    margin-left: 10px;
+    color: rgb(158, 158, 158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    line-height: .8;
+  }

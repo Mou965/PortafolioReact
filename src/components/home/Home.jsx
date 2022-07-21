@@ -14,17 +14,6 @@ const Home = () => {
                         </button>
                     </div>
                 </div>
-                <div className='home-icon_container'>             
-                    <div className='home-icon-linkedin'>
-                        <i className="fa-brands fa-linkedin"></i>
-                    </div>
-                    <div className='home-icon-github'>
-                         <i className="fa-brands fa-github"></i>
-                    </div>
-                    <div className='home-icon-envelope'>  
-                         <i className="fa-solid fa-envelope"></i>
-                    </div>
-                </div>
                 <div className="homevideo">
                     <video autoPlay loop muted type="video/mp4" src={video}></video>
                 </div>

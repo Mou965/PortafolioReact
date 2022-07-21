@@ -1,53 +1,37 @@
-import React from 'react'
-import './styles/contact.css'
+import React, { useState } from 'react'
+import './style/contact.css'
 
-const Contac = () => {
-    return (
-        <div class="container">
-            <input type="checkbox" id="control" />
-            <label id="main-menu" for="control">
-                <div class="share top">
-                    <div class="toplayer"></div>
-                </div>
-                <div class="share mid">
-                    <div class="toplayer"></div>
-                </div>
-                <div class="share bottom">
-                    <div class="toplayer"></div>
-                </div>
-            </label>
-            <div class="icon-container"><i class="fa fa-github fa-4x icon-3d"></i>
-                <div class="section one"></div>
-                <div class="section two"></div>
-                <div class="section three"></div>
-                <div class="section four"></div><a class="hover-toggle" href="#"></a>
+const Contact = () => {
+    const [contactOpen, setContactOpen] = useState(false)
+    const contactToggle = () => {
+        setContactOpen(!contactOpen)
+    }
+  return (
+    <>
+       <div className={ contactOpen ? 'home-icon_container' : 'home-icon_container home-icon_container-action'} >             
+            <div className='home-icon-linkedin'>
+                <i className="fa-brands fa-linkedin"></i>
             </div>
-            <div class="icon-container"><i class="fa fa-twitter fa-4x icon-3d"></i>
-                <div class="section one"></div>
-                <div class="section two"></div>
-                <div class="section three"></div>
-                <div class="section four"></div><a class="hover-toggle" href="#"></a>
+            <div className='home-icon-github'>
+                    <i className="fa-brands fa-github"></i>
             </div>
-            <div class="icon-container"><i class="fa fa-instagram fa-4x icon-3d"></i>
-                <div class="section one"></div>
-                <div class="section two"></div>
-                <div class="section three"></div>
-                <div class="section four"></div><a class="hover-toggle" href="#"></a>
-            </div>
-            <div class="icon-container"><i class="fa fa-whatsapp fa-4x icon-3d"></i>
-                <div class="section one"></div>
-                <div class="section two"></div>
-                <div class="section three"></div>
-                <div class="section four"></div><a class="hover-toggle" href="#"></a>
-            </div>
-            <div class="icon-container"><i class="fa fa-facebook fa-4x icon-3d"></i>
-                <div class="section one"></div>
-                <div class="section two"></div>
-                <div class="section three"></div>
-                <div class="section four"></div><a class="hover-toggle" href="#" id="final"></a>
+            <div className='home-icon-envelope'>  
+                    <i className="fa-solid fa-envelope"></i>
             </div>
         </div>
-    )
+        <div className="home-action" onClick={contactToggle}>
+            {
+                contactOpen ? <div>
+                    <p>C <br /> o <br /> n <br /> t <br /> a <br /> c <br /> t <br /> o</p>
+                    <i className="fa-solid fa-circle-right"></i>
+                </div>
+                :
+                <i className="fa-solid fa-circle-left"></i>
+
+            }
+        </div>
+    </>
+  )
 }
 
-export default Contac
+export default Contact

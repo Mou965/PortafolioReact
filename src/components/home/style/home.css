@@ -50,48 +50,6 @@
     font-size: 30px;
     font-weight: 700;
 }
-.home-icon_container{
-  width: max-content;
-  height: max-content;
-  position: fixed;
-  top: 600px;
-  z-index: 5;
-  font-size: 30px;
-  display: flex;
-  flex-direction: column;
-}
-.home-icon-linkedin {
-  background: #1479bd;
-  padding: 8px;
-  font-size: 40px;
-  border-top-right-radius: 5px;
-}
-.home-icon-linkedin:hover{
-  background: white;
-  color: #1479bd;
-}
-.home-icon-github {
-  background: #902fa8;
-  padding: 8px;
-  font-size: 40px;
-}
-.home-icon-github:hover{
-  background: white;
-  color: #902fa8;
-}
-.home-icon-envelope {
-  background: #188a5e;
-  padding: 8px;
-  font-size: 40px;
-  border-bottom-right-radius: 5px;
-}
-.home-icon-envelope:hover{
-  background: white;
-  color: #188a5e;
-}
-
-
-
 
 @media screen and (max-width: 768px){
   .home-content{
